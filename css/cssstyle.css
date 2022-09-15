@@ -1,0 +1,71 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+
+  .mobile {
+    width: 33.333333%;
+    height: 300px;
+    background: url(img/download.jpg) no-repeat 0 0 / cover;
+    overflow: hidden;
+    float: left;
+  }
+
+  /* photos  */
+
+  .mo1{
+    background: url(img/download\ \(1\).jpg) no-repeat center center ;
+    background-size: contain;
+  }
+  .mo2{
+    background: url(img/download\ \(2\).jpg) no-repeat center center;
+    background-size: contain;
+  }
+  .mo3{
+    background: url(img/download\ \(3\).jpg) no-repeat center center;
+    background-size: contain;
+  }
+  .mo4{
+    background: url(img/download\ \(3\).jpg) no-repeat center center;
+    background-size: contain;
+  }
+  .mo5{
+    background: url(img/download\ \(4\).jpg) no-repeat center center;
+    background-size: contain;
+  }
+  .mo6{
+    background: url(img/download.jpg) no-repeat center center;
+    background-size: contain;
+  }
+
+  .mobile::before {
+    content: attr(data-name);
+    background-color: rgba(0, 0, 0, 0.673);
+    color: aliceblue;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: 5px 0px;
+    transform: translateY(-68px);
+    transition: 0.5s;
+  }
+  .mobile:hover::before {
+    transform: translateY(-1px);
+  }
+  .mobile::after {
+    content: attr(data-price);
+    background-color: rgba(0, 0, 0, 0.673);
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 30px;
+    transition: 0.5s;
+    transform: translateY(256px);
+  }
+
+  .mobile:hover::after {
+    transform: translateY(210px);
+  }
